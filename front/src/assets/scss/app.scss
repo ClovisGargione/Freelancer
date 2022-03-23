@@ -1,0 +1,82 @@
+@import '../css/bootstrap.min.css';
+@import '../../../node_modules/material-design-icons/iconfont/material-icons.css';
+
+.material-icons.md-18 { font-size: 18px }
+.material-icons.md-24 { font-size: 24px }
+.material-icons.md-36 { font-size: 36px }
+.material-icons.md-48 { font-size: 48px }
+
+
+
+html, body{
+    background-color: var(--secondary);
+    height: 100%;
+}
+
+.content{
+    padding-top:66px;
+}
+
+.title > h2 {
+    line-height: 1.5em;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: lighter;
+}
+.title > h2:before {
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+height: 5px;
+width: 55px;
+background-color: #111;
+}
+.title > h2:after {
+content: "";
+position: absolute;
+left: 0;
+bottom: 2px;
+height: 1px;
+width: 100%;
+max-width: 100%;
+background-color: #333;
+}
+
+.pointer {
+    cursor: pointer !important;
+}
+
+.btn-menu {
+    border-left-width: 1px;
+    border-left-width: .25rem;
+    border-left-color: var(--blue);
+    background-color: var(--dark);
+    color: var(--light);
+    &:hover {
+        color: #fff;
+        background-color: #23272b;
+        border-color: #1d2124;
+        border-left-width: 1px;
+        border-left-width: .25rem;
+        border-left-color: var(--blue);
+    }
+}
+
+.card {
+    margin-bottom: 10px;
+    background-color: var(--dark);
+    transition: .4s;
+    color: var(--light);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    border-left-color: var(--blue);
+}
+.bd-callout {
+    border-left-width: 1px;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
